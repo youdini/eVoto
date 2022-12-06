@@ -1,23 +1,17 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, SafeAreaView, Button } from 'react-native';
 import { StatusBar } from "expo-status-bar";
+import CardSignIn from "../components/SignIn/SignInCard";
 
 const SignIn = () => {
   return (
-    <View style={styles.container}>
+    <View style={StyleSheet.container}>
       <View>
-        <Image source={require('../assets/images/logo_ccc.png')}/>
+        <CardSignIn/>
       </View>
     </View>
-  );
+  )
 }
 
 export default SignIn
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: 'center',
-  }
-})
