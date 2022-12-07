@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import CardSignIn from "./src/components/SignIn/SignInCard";
+import CardSignIn from "./src/components/SignInCard";
 import SignIn from "./src/screens/SignIn";
 
 const App = () => {

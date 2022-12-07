@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, SafeAreaView, Button } from 'react-native';
 import { StatusBar } from "expo-status-bar";
-import CardSignIn from "../components/SignIn/SignInCard";
+import CardSignIn from "../components/SignInCard";
 
 const SignIn = () => {
   return (
