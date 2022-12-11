@@ -1,13 +1,11 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import CardSignIn from "./src/components/SignInCard";
-import SignIn from "./src/screens/SignIn";
+import Navigation from "./src/navigations/Navigations";
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <SignIn/>
-    </View>
+    <Navigation/>
   )
 }
 
@@ -18,6 +16,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:20,
   }
 })
