@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     marginHorizontal: 20,
-    width:'100%'
   },
   text: {
     marginVertical:20
