@@ -1,13 +1,20 @@
 import React from "react";
-import { View } from "react-native";
-import SignIn from "./src/screens/SignIn";
+import { View, StyleSheet } from "react-native";
+import CardSignIn from "./src/components/SignInCard";
+import Navigation from "./src/navigations/Navigations";
 
 const App = () => {
   return (
-    <View>
-      <SignIn/>
-    </View>
+    <Navigation/>
   )
 }
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
