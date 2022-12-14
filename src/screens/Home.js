@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import Back from "../assets/back-icon/back";
 import BottomNavigation from "../components/BottomNavigation";
 import { ProfileContainer } from "../components/ProfilePhoto";
+import CreateJoinCard from "../components/CreateJoinCard";
 
 const Home = () => {
   const navigation = useNavigation();
@@ -14,6 +15,9 @@ const Home = () => {
       </TouchableOpacity>
       <View style={styles.profile}>
         <ProfileContainer />
+      </View>
+      <View>
+        <CreateJoinCard/>
       </View>
       <View style={styles.bottomNav}>
         <BottomNavigation />
