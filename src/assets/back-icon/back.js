@@ -1,7 +1,7 @@
-import * as React from "react"
-import Svg, { Path } from "react-native-svg"
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
 
-const Back = ({width, height}) => (
+const Back = ({ width, height }) => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     className="ionicon"
@@ -17,6 +17,6 @@ const Back = ({width, height}) => (
       strokeWidth={32}
     />
   </Svg>
-)
+);
 
-export default Back
+export default Back;

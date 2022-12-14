@@ -7,9 +7,9 @@
 Type this in terminal (it must be in the project's directories)
 
 ```
-npm install && 
+npm install &&
 
-npm install @react-navigation/native @react-navigation/native-stack && 
+npm install @react-navigation/native @react-navigation/native-stack &&
 
 expo install react-native-screens react-native-safe-area-context &&
 
@@ -31,4 +31,3 @@ If there is vulnerabilities run this code:
 **Updating the expo**
 
 `expo upgrade`
-

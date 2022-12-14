@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Logo from "../assets/logo/logo";
+import GoogleIcon from "../assets/googleicon/GoogleIcon";
 
 const CardSignIn = () => {
   const navigation = useNavigation();
@@ -17,6 +18,9 @@ const CardSignIn = () => {
       <View style={styles.container}>
         <View style={styles.logo}>
           <Logo />
+        </View>
+        <View style={styles.google}>
+          <GoogleIcon />
         </View>
         <TouchableOpacity
           style={[styles.buttonSignIn, styles.shadowProp]}
@@ -39,10 +43,7 @@ export default CardSignIn;
 
 const styles = StyleSheet.create({
   cardWrapper: {
-    width: 350,
-    height: 300,
     alignContent: "center",
-    justifyContent: "center",
     borderRadius: 20,
     backgroundColor: "#EFEFEF",
   },
@@ -52,6 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 100,
     marginHorizontal: 20,
+    marginVertical: 30,
   },
   shadowProp: {
     shadowOffset: { width: 5, height: 5 },
@@ -62,6 +64,10 @@ const styles = StyleSheet.create({
   },
   logo: {
     alignItems: "center",
-		marginBottom:50
+    marginVertical: 30,
+  },
+  google: {
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

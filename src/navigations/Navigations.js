@@ -1,14 +1,14 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
-import { SignInStack } from './SignInStack';
+import { SignInStack } from "./SignInStack";
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <SignInStack/>
+      <SignInStack />
     </NavigationContainer>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

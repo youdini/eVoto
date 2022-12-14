@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   name: {
-    padding:10,
+    padding: 10,
     fontSize: 20,
-    justifyContent:'center',
-    alignItems:"center",
-    textAlign:'center'
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
   },
   shadowProp: {
     shadowOffset: { width: 5, height: 5 },

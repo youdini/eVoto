@@ -1,11 +1,11 @@
-import * as React from "react"
-import Svg, { Defs, ClipPath, Path, G } from "react-native-svg"
+import * as React from "react";
+import Svg, { Defs, ClipPath, Path, G } from "react-native-svg";
 
 const Logo = () => (
   <Svg
-    width={200}
+    width={300}
     viewBox="0 0 261.75 72"
-    height={60}
+    height={70}
     preserveAspectRatio="xMidYMid"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -38,6 +38,6 @@ const Logo = () => (
       fill="#004aad"
     />
   </Svg>
-)
+);
 
-export default Logo
+export default Logo;
