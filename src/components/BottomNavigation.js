@@ -15,9 +15,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   navButton: {
-    alignSelf:'flex-start',
-    borderRadius:100,
-    backgroundColor: '#D9D9D9',
-    padding:30,
-  }
-})
+    alignSelf: "flex-start",
+    borderRadius: 100,
+    backgroundColor: "#D9D9D9",
+    padding: 30,
+  },
+});

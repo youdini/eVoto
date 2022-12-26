@@ -17,10 +17,7 @@ const Home = () => {
         <ProfileContainer />
       </View>
       <View>
-        <CreateJoinCard/>
-      </View>
-      <View style={styles.bottomNav}>
-        <BottomNavigation />
+        <CreateJoinCard />
       </View>
     </View>
   );
