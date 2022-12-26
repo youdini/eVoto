@@ -4,17 +4,15 @@ import CardSignIn from "./src/components/SignInCard";
 import Navigation from "./src/navigations/Navigations";
 
 const App = () => {
-  return (
-    <Navigation/>
-  )
-}
+  return <Navigation />;
+};
 
 export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-})
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

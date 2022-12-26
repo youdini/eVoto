@@ -13,7 +13,7 @@ import CardSignIn from "../components/SignInCard";
 const SignIn = () => {
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.logoContainer}>
         <Image
           style={styles.image}
           source={require("../assets/images/logo_ccc.png")}
@@ -30,13 +30,14 @@ export default SignIn;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignItems: "center",
   },
   image: {
-    width: 150,
-    height: 150,
+    width: 125,
+    height: 125,
     resizeMode: "contain",
     justifyContent: "flex-start",
   },
+  logoContainer: {},
 });
