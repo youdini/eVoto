@@ -1,14 +1,19 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 const Room = () => {
   return (
-    <View>
-      <Text>
-        Room
-      </Text>
+    <View style={styles.container}>
+      <Text>Room</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Room
+export default Room;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+  },
+});

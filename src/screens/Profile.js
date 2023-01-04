@@ -4,11 +4,9 @@ import { View, Text } from "react-native";
 const Profile = () => {
   return (
     <View>
-      <Text>
-        Profile  Screen
-      </Text>
+      <Text>Profile Screen</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
