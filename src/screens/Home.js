@@ -1,24 +1,23 @@
 import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import Back from "../assets/back-icon/back";
-import BottomNavigation from "../components/BottomNavigation";
+import { View, StyleSheet } from "react-native";
 import { ProfileContainer } from "../components/ProfilePhoto";
 import CreateJoinCard from "../components/CreateJoinCard";
 
+import HomeStackHeader from "../components/HomeStackHeader";
+
 const Home = () => {
-  const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.back} onPress={() => navigation.goBack()}>
-        <Back width={30} height={30} />
-      </TouchableOpacity>
+      {/* Header (Back and Option Button) */}
+      <HomeStackHeader />
       <View style={styles.profile}>
-        <ProfileContainer />
+        <ProfileContainer
+          imgURL={
+            "https://preview.redd.it/loz0cjh7ubb71.png?auto=webp&s=eb157556c0217c8b2e313c844b7b7125fa1d6222"
+          }
+        />
       </View>
-      <View>
-        <CreateJoinCard />
-      </View>
+      <CreateJoinCard />
     </View>
   );
 };
@@ -28,18 +27,9 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#F5FCFF",
   },
-  back: {
-    alignSelf: "flex-start",
-    padding: 10,
-    borderRadius: 100,
-    backgroundColor: "#D9D9D9",
-    marginStart: 10,
-  },
-  bottomNav: {
-    flex: 1,
-    justifyContent: "flex-end",
-  },
+
   profile: {
     justifyContent: "center",
     alignItems: "center",

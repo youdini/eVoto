@@ -1,18 +1,11 @@
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  SafeAreaView,
-  Button,
-} from "react-native";
+import { View, StyleSheet, Image, SafeAreaView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import CardSignIn from "../components/SignInCard";
 
 const SignIn = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.logoContainer}>
         <Image
           style={styles.image}
@@ -20,8 +13,8 @@ const SignIn = () => {
         />
       </View>
       <CardSignIn />
-      <StatusBar hidden={true} />
-    </View>
+      <StatusBar style="auto" />
+    </SafeAreaView>
   );
 };
 
@@ -39,5 +32,4 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
     justifyContent: "flex-start",
   },
-  logoContainer: {},
 });

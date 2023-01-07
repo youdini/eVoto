@@ -16,7 +16,7 @@ export default CreateJoinCard;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    padding: 40,
     borderRadius: 30,
     backgroundColor: "#E4E4E4",
     justifyContent: "center",

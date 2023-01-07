@@ -24,7 +24,7 @@ const CardSignIn = () => {
         </View>
         <TouchableOpacity
           style={[styles.buttonSignIn, styles.shadowProp]}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("HomeStack")}
         >
           <Text
             style={{

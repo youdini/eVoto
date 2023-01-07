@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 export const ProfileName = ({ firstName, lastName, middleInitial }) => {
   return (
@@ -9,10 +9,15 @@ export const ProfileName = ({ firstName, lastName, middleInitial }) => {
   );
 };
 
-export const ProfileContainer = () => {
+export const ProfileContainer = ({ imgURL }) => {
   return (
     <View>
-      <View style={[styles.profile, styles.shadowProp]}></View>
+      <View style={[styles.profile, styles.shadowProp]}>
+        <Image
+          source={{ uri: imgURL }}
+          style={{ width: 200, height: 200, resizeMode: "cover" }}
+        />
+      </View>
       <ProfileName
         firstName={"John Lee"}
         lastName={"Ingua"}
@@ -28,6 +33,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     borderRadius: 100,
+    overflow: "hidden",
   },
   name: {
     padding: 10,
