@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
-import Room from "../screens/Room";
+import RoomLists from "../screens/RoomLists";
 import Profile from "../screens/Profile";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -16,8 +16,8 @@ function BottomNav() {
       }}
     >
       <Tab.Screen
-        name="Room"
-        component={Room}
+        name="RoomLists"
+        component={RoomLists}
         options={{
           tabBarLabel: "Rooms",
           tabBarIcon: ({ color, size }) => (

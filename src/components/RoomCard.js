@@ -1,10 +1,19 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
-import { StatusBar } from "expo-status-bar";
 
 const RoomCard = ({ id, title, imgURL }) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() =>
+        navigation.navigate("Room", {
+          roomTitle: title,
+          roomPhoto: imgURL,
+        })
+      }
+    >
       <View style={styles.cardWrapper}>
         <View>
           <Image
@@ -17,7 +26,6 @@ const RoomCard = ({ id, title, imgURL }) => {
           />
         </View>
         <Text style={styles.title}>{title}</Text>
-        <StatusBar style="light" />
       </View>
     </TouchableOpacity>
   );
