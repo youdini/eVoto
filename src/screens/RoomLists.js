@@ -12,7 +12,7 @@ const RoomLists = () => {
       <ScrollView style={styles.scrollView} ref={ref}>
         {/* Room Card Component */}
         <RoomCard
-          title={"SSC Election 2024"}
+          title="SSC Election 2024"
           id={123123}
           imgURL="https://www.ccc.edu.ph/images/2022/11/18/dci-banner.png"
         />

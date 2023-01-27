@@ -8,14 +8,6 @@ const HomeStackHeader = () => {
 
   return (
     <View style={styles.header}>
-      {/* Back Button */}
-      <TouchableOpacity
-        style={styles.buttonBG}
-        onPress={() => navigation.navigate("SignIn")}
-      >
-        <Ionicons name="arrow-back" size={24} color="black" />
-      </TouchableOpacity>
-
       {/* Option Button */}
       <TouchableOpacity
         style={styles.buttonBG}
@@ -32,7 +24,7 @@ export default HomeStackHeader;
 const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
     alignItems: "center",
   },
   buttonBG: {

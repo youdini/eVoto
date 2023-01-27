@@ -14,13 +14,19 @@ const Settings = () => {
       <SettingsOption
         iconName={"person-circle-outline"}
         label={"Update Profile"}
-        navigate={""}
+        navigate={"UpdateProfile"}
         size={30}
       />
       <SettingsOption
         iconName={"information-circle-outline"}
         label={"About Us"}
         navigate={""}
+        size={30}
+      />
+      <SettingsOption
+        iconName={"log-out-outline"}
+        label={"Log out"}
+        navigate={"SignIn"}
         size={30}
       />
     </SafeAreaView>

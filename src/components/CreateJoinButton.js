@@ -1,9 +1,14 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
-const CreateJoinButton = ({ name }) => {
+const CreateJoinButton = ({ name, navigate }) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate(navigate)}
+    >
       <Text style={styles.text}>{name}</Text>
     </TouchableOpacity>
   );

@@ -1,10 +1,15 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const SettingsOption = ({ iconName, label, navigate, size }) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.buttonWrapper}>
+    <TouchableOpacity
+      style={styles.buttonWrapper}
+      onPress={() => navigation.navigate(navigate)}
+    >
       <Text style={styles.label}>{label}</Text>
       <Ionicons name={iconName} size={size} color="black" />
     </TouchableOpacity>

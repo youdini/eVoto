@@ -9,22 +9,20 @@ import {
 import React from "react";
 
 const Room = ({ route, navigation }) => {
-  const { roomTitle } = route.params;
-  const { roomPhoto } = route.params;
-  const imgUrl = JSON.stringify(roomPhoto);
+  const { roomTitle, roomPhoto } = route.params;
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View>
         <Image
-          source={{ uri: imgUrl }}
+          source={{ uri: roomPhoto }}
           style={{
-            width: 200,
-            height: 100,
-            resizeMode: "cover",
+            width: 400,
+            height: 200,
+            resizeMode: "stretch",
           }}
         />
       </View>
-      <Text style={styles.title}>{JSON.stringify(roomTitle)}</Text>
+      <Text style={styles.title}>{roomTitle}</Text>
     </SafeAreaView>
   );
 };
@@ -33,7 +31,11 @@ export default Room;
 
 const styles = StyleSheet.create({
   title: {
+    margin: 20,
     fontSize: 20,
     fontWeight: "bold",
+  },
+  container: {
+    flex: 1,
   },
 });

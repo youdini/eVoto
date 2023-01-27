@@ -5,9 +5,9 @@ import CreateJoinButton from "./CreateJoinButton";
 const CreateJoinCard = () => {
   return (
     <View style={styles.container}>
-      <CreateJoinButton name={"Join Room"} />
+      <CreateJoinButton name={"Join Room"} navigate={"JoinRoom"} />
       <Text style={styles.text}>OR</Text>
-      <CreateJoinButton name={"Create Room"} />
+      <CreateJoinButton name={"Create Room"} navigate={"CreateRoom"} />
     </View>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import HomeStackHeader from "../components/HomeStackHeader";
-import { ProfileContainer, ProfileName } from "../components/ProfilePhoto";
+import { ProfileContainer } from "../components/ProfilePhoto";
+import { ProfileInfoCard } from "./UpdateProfile";
 
 const Profile = () => {
   return (
@@ -14,6 +15,8 @@ const Profile = () => {
           }
         />
       </View>
+      {/* Card info with course, year and section, address and description  */}
+      <ProfileInfoCard />
     </View>
   );
 };
@@ -26,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FCFF",
   },
   profileWrapper: {
-    flex: 1,
     alignItems: "center",
   },
+  profileBox: {},
 });
